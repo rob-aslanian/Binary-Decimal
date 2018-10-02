@@ -1,0 +1,57 @@
+.App {
+  text-align: center;
+}
+
+.btns-bg{
+  display: flex;
+  justify-content: space-between;
+  background: #333;
+  max-width: 50%;
+  margin: 0 auto;
+  border-radius: 7px;
+}
+.btn{
+  border-radius: 7px;
+  position: relative;
+  display: inline-flex;
+  transition: .3s all;
+}
+.active{
+  transform: scale(1.25);
+  background: #1d7d74;
+}
+.btn::after{
+  content:  attr(data-number);
+  position: absolute;
+  bottom: -35px;
+  color:#333;
+}
+.card{
+  padding: 2rem 0;
+  background: #ffecb3;
+
+}
+select{
+  display: block;
+}
+.select_level{
+   max-width: 25%;
+   margin: 1rem auto;
+}
+
+.start-screen{
+  padding: 1rem;
+
+}
+.card-panel{
+  max-width: 50%;
+  margin: 5rem auto;
+}
+.collection-item{
+  background: #66bb6a   !important;
+  display: flex;
+  justify-content: space-between;
+  /* color:#ccc; */
+  font-weight: 600;
+
+}
